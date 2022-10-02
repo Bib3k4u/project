@@ -1,0 +1,190 @@
+body{
+    background-image: url('/images/voyager1.jpg');
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family:monospace !important;
+    
+}
+
+.navbr{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+}
+
+.nav_button{
+  margin-left: 240px;
+  justify-content: center !important;
+ width: 150px;
+ border-radius:15px;
+ background-color: black;
+ padding: 8px; 
+ border:2px solid white;
+ color:white;
+ 
+}
+.nav_button:hover{
+  transform: translate(3ch, 3mm);
+  background-color: white;
+  color:black;
+}
+.container{
+    margin-left: 0px !important;
+    margin-top: 50px !important;
+}
+.heading{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+/* .video1{
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    border: 1px solid white;
+    
+} */
+.information{
+    border: 1px solid white;
+    height: 200vh;
+    width: 200%;
+    color: white;
+    text-align:justify;
+}
+.information h3,h4{
+    text-align: center;
+    font-size: 30px;
+}
+.information h4{
+    margin-top: 50px;
+    font-size: 32px;
+}
+.information p{
+    margin:20px;
+}
+#video2{
+    border: 1px solid white;
+    margin:35px;
+}
+.playpause{
+    width: 150px;
+   border-radius:15px;
+   background-color: black;
+   padding: 8px; 
+   border:2px solid white;
+   color:white;
+   margin-left:140px;
+
+}
+#quiz{
+    border:1px solid white;
+    margin-left: 370px;
+    width: 90%;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.video1{
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	background-color:black;
+    opacity: 0.9;
+}
+
+.animation{
+  height: 50vh;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+#aSide {
+  height: 50vh;
+  width: 380px;
+  /* position: absolute; */
+  /* top: calc(50% - 250px);
+  right: 7%; */margin-left: 10px;
+}
+
+/* This styles the 3D object inserted in the aside container */
+#aSide model-viewer {
+  height: 50vh;
+  width: 380px;
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  border: none;
+}
+
+
+
+/*flip card*/
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color:transparent;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /*flip card end here */
+
+
+  .facts{
+    margin-left: 20px !important;
+    margin-top: 50px;
+  }
+  .submit{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding: 8px;
+    color:white;
+    background-color:transparent;
+  }
+  .submit:hover{
+    width:80%;
+  background-color: white;
+  color: black;
+  }

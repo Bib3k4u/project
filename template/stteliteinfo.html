@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/satelitepage.css" />
+    
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+    <!-- FontAweome CDN Link for Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="/css/firstpage.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <title>Satellites</title>
+  </head>
+  <body>
+    <div class="container">
+        
+      <div class="row navbr">
+          <div class="col-sm-3">
+              <button disabled class="nav_button">Home</button>
+          </div>
+          <div class="col-sm-3">
+              <a href="template/sttelites.html"><button class="nav_button">Satellites</button></a>
+          </div>
+          <div class="col-sm-3">
+              <a href="/template/Rockets.html"><button disabled class="nav_button">Rockets</button></a>
+          </div>
+          <div class="col-sm-3">
+              <a href="/template/ISS.html"><button class="nav_button">ISS</button></a>
+          </div>
+          <div class="col-sm-3">
+             <a href="/template/Telescopes.html"> <button class="nav_button">Telescopes</button></a>
+          </div>
+      </div>
+  </div>
+    <br />
+    <div class="main">
+      <p class="heading">About Satellites</p>
+      <div id="results"></div>
+      <div class="container">
+        <div class="row">
+          <div id="aSide" class="col-md-4 animation">
+            <label for="item-1" id="song-1">
+              <model-viewer
+                class="mode"
+                id="ht"
+                aria-multiline=""
+                src="/3dmodels/Voyager.glb"
+                ar
+                environment-image=""
+                poster=""
+                shadow-intensity="1"
+                camera-controls
+                touch-action="pan-y"
+              >
+              </model-viewer>
+            </label>
+          </div>
+
+          <div class="col-md-4">
+            <div class="information">
+              <h3>Voyager 1</h3>
+              <p>
+                The mission objective of the Voyager Interstellar Mission (VIM)
+                is to extend the NASA exploration of the solar system beyond the
+                neighborhood of the outer planets to the outer limits of the
+                Sun's sphere of influence, and possibly beyond.
+              </p>
+              <br />
+
+              <video id="video2" src="/videos/voyagerfunction.mp4"></video>
+              <button class="playpause" onclick="playVid()" type="button">
+                Play Video
+              </button>
+              <button class="playpause" onclick="pauseVid()" type="button">
+                Pause Video</button
+              ><br />
+
+              <h4>Intresting fact about Voyager</h4>
+              <div class="row facts">
+                <div class="col-md-6">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img
+                          src="/images/goldendisk.jpg"
+                          alt="Avatar"
+                          style="width: 300px; height: 300px"
+                        />
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>The Golden Record</h1>
+                        <p>
+                          Both Voyager spacecrafts carry a greeting to any form
+                          of life, should that be encountered. The message is
+                          carried by a phonograph record - -a 12-inch
+                          gold-plated copper disk containing sounds and images
+                          selected to portray the diversity of life and culture
+                          on Earth
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img
+                          src="/images/voyager1.jpg"
+                          alt="Avatar"
+                          style="width: 300px; height: 300px"
+                        />
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>One and Only</h1>
+                        <p>
+                          The Voyager spacecraft are the third and fourth human
+                          spacecraft to fly beyond all the planets in our solar
+                          system. Pioneers 10 and 11 preceded Voyager in
+                          outstripping the gravitational attraction of the Sun
+                          but on February 17, 1998, Voyager 1 passed Pioneer 10
+                          to become the most distant human-made object in space.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6" style="margin-top: 20px">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img
+                          src="/images/voyagergif.gif"
+                          alt="Avatar"
+                          style="width: 300px; height: 300px"
+                        />
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Present status</h1>
+                        <p>
+                          As of April 2022, Voyager 1 is at a distance of 22.3
+                          billion kilometers (149.0 AU) from the Sun. Voyager 2
+                          was at a distance of 18.5 billion kilometers (123.6
+                          AU). Voyager 1 is escaping the solar system at a speed
+                          of about 3.6 AU per year. Voyager 2 is escaping the
+                          solar system at a speed of about 3.3 AU per year.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6" style="margin-top: 20px">
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img
+                          src="/images/jupitermoon.jfif"
+                          alt="Avatar"
+                          style="width: 300px; height: 300px"
+                        />
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>voyager2 achivements</h1>
+                        <p>
+                          Voyager 2 discovered a 14th moon at Jupiter. Voyager 2
+                          was the first human-made object to fly past Uranus. At
+                          Uranus, Voyager 2 discovered 10 new moons and two new
+                          rings. Voyager 2 was the first human-made object to
+                          fly by Neptune.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div id="quiz">
+              <!-- <h3>Play and win exciting points!</h3>
+                    <p>Q1.How many voyager is launched till yet</p>
+                    <input type="button"   class="submit" id="option1" value="3">
+                    <input type="button"  class="submit" id="option2" value="1">
+                    <input type="button"  class="submit" id="option3" value="4">
+                    <input type="button"  class="submit" id="option4" value="2">
+                    
+                   
+                    <h2 class="score">current score: <p id="point">00</p></h2> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="col box">
+        <input name="option" type="radio" id="first" value="a" required />
+        <label for="first">Testing 1</label>
+      </div>
+      <div class="col box">
+        <input name="option" type="radio" id="second" value="b" required />
+        <label for="second">Testing 2</label>
+      </div>
+      <div class="col box">
+        <input name="option" type="radio" id="third" value="c" required />
+        <label for="third">Testing 3</label>
+      </div>
+      <div class="col box">
+        <input name="option" type="radio" id="fourth" value="d" required />
+        <label for="fourth">Testing 4</label>
+      </div>
+      <button id="submit">Submit</button>
+    </div>
+   
+    <!-- <script src="js/questions.js"></script> -->
+    
+   
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <!-- <script src="js/script.js"></script>       -->
+  </body>
+</html>

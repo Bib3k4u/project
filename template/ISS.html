@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/firstpage.css">
+    <link rel="stylesheet" href="/css/ISS.css">
+    <link rel="stylesheet" href="/js/ISS.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <title>ISS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row navbr" style="margin: auto;margin-top: 30px; width: 100%;">
+            <div class="col-sm-3">
+                <a href="/index.html"><button class="nav_button">Home</button></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="template/stteliteinfo.html"><button class="nav_button">Satellites</button></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="/template/Rockets.html"><button class="nav_button">Rockets</button></a>
+            </div>
+            <div class="col-sm-3">
+                <button disabled class="nav_button">ISS</button>
+            </div>
+            <div class="col-sm-3">
+                <a href="/template/Telescopes.html"><button class="nav_button">Telescopes</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    
+   
+    <label for=""><h3 style="margin-top: 40px; color:white">Internatioal Space Station</h3></label>
+  <div class="wrapper">
+    
+    <div class="images">
+      <div class="img-1">
+        <img src="https://www.nasa.gov/sites/default/files/s132e012209_sm.jpg" alt="">
+      </div>
+      <div class="img-2">
+        <img src="https://www.nasa.gov/sites/default/files/iss01-389-023_sm.jpg" alt="">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="drag-line">
+        <span></span>
+      </div>
+      <input type="range" min="0" max="100" value="50">
+    </div>
+  </div>
+
+ 
+
+    <div class="container2" style="width: 70%; margin: auto;">
+        <p style="color: white; text-align: justify;">The International Space Station iss is a space station that keeps moving in low earth round line of motion of a body. It is living-enabled and the largest artificial 1 one dependent on that can be seen with the uncovered eye from Earth. It act as a building in which goods are made,
+           building for observation and laboratory 2.</p>
+    </div>
+                     
+                                    
+    
+
+    <script>
+      const slider = document.querySelector(".slider input");
+      const img = document.querySelector(".images .img-2");
+      const dragLine = document.querySelector(".slider .drag-line");
+      slider.oninput = ()=>{
+        let sliderVal = slider.value;
+        dragLine.style.left = sliderVal + "%";
+        img.style.width = sliderVal + "%";
+      }
+    </script>
+</body>
+<script src="js/firstpage.js"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</html>

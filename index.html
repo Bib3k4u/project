@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/firstpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <title>Space Bumf</title>
+</head>
+<body>
+    <label style="margin: auto;width: 100%;" for=""><h3 style="color: white; text-align: center; font-weight: 700;">  Welcome to Space Bumf</h3></label>
+    <div class="container">
+        
+        <div class="row navbr">
+            <div class="col-sm-3">
+                <button disabled class="nav_button">Home</button>
+            </div>
+            <div class="col-sm-3">
+                <a href="template/sttelites.html"><button class="nav_button">Satellites</button></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="/template/Rockets.html"><button class="nav_button">Rockets</button></a>
+            </div>
+            <div class="col-sm-3">
+                <a href="/template/ISS.html"><button class="nav_button">ISS</button></a>
+            </div>
+            <div class="col-sm-3">
+               <a href="/template/Telescopes.html"> <button class="nav_button">Telescopes</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="container1">
+		<input type="radio" name="slider" id="item-1" checked>
+		<input type="radio" name="slider" id="item-2">
+		<input type="radio" name="slider" id="item-3">
+	  <div class="cards">
+		<label class="card" for="item-1" id="song-1">
+			<model-viewer class="mode" id="ht" aria-multiline="" src="/3dmodels/ISS_stationary.glb" ar environment-image="" poster="" 
+			shadow-intensity="1" camera-controls touch-action="pan-y">
+		</model-viewer>
+		</label>
+		<label class="card" for="item-2" id="song-2">
+			<model-viewer class="mode" aria-multiline="" src="/3dmodels/Voyager.glb" ar environment-image="" poster="" 
+			shadow-intensity="1" camera-controls touch-action="pan-y">
+		</model-viewer>
+		</label>
+		<label class="card" for="item-3" id="song-3">
+			<model-viewer class="mode" aria-multiline="" src="/3dmodels/satelite.glb" ar environment-image="" poster="" 
+			shadow-intensity="1" camera-controls touch-action="pan-y">
+		</model-viewer>
+		</label>
+	  </div>
+	</div>
+
+    <div class="text-Area" style="color: white;">
+        
+        <p style="text-align: center;">
+           <h4> About Project |</h4>
+            This website is made for everyone who is curious to learn about Events done, (Satellites,Rockets) launched by NASA and also the ISS(Internatioal Space Station). This User Interface is easy to uderstandable by non-techincal guys and children, too.
+            We have extracted infromation from the official websites on NASA and explained the details in a easy way with the help of Animations and 3D- Models.
+            Quiz sections have been made on Each of the webpage related to their topics and If a user gets passing points in quiz they will be redirected to the page which is the fun part of project.
+            A 3D-game of Rocket travelling from one celestial body to another (ex- Earth to Moon).
+            The Game is quite interesting and you guys will love it.
+        </p>
+    </div>
+
+    
+</body>
+<script src="js/firstpage.js"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</html>

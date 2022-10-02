@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/firstpage.js"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+    <link rel="stylesheet" href="/css/Telescopes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <title>TeleScopes</title>
+</head>
+
+<body>
+    <label style="margin: auto;width: 100%;" for=""><h3 style="color: white; text-align: center; font-weight: 700;">  <a href="/template/Teleinfo.html" style="color: white;">Telescopes</a></h3></label>
+    
+
+
+    
+    <div class="container1">
+		<input type="radio" name="slider" id="item-1" checked>
+		<input type="radio" name="slider" id="item-2">
+		<input type="radio" name="slider" id="item-3">
+	  <div class="cards">
+		<label class="card" for="item-1" id="song-1">
+			<model-viewer class="mode" id="ht" aria-multiline="" src="/3dmodels/Hubble.glb" ar environment-image="" poster="" 
+			shadow-intensity="1" camera-controls touch-action="pan-y">
+		</model-viewer>
+		</label>
+		<label class="card" for="item-2" id="song-2">
+			<model-viewer class="mode" aria-multiline="" src="/3dmodels/SPITZER.glb" ar environment-image="" poster="" 
+			shadow-intensity="1" camera-controls touch-action="pan-y">
+		</model-viewer>
+		</label>
+		<label class="card" for="item-3" id="song-3">
+			<model-viewer class="mode" aria-multiline="" src="/3dmodels/the_james_webb_space_telescope.glb" ar environment-image="" poster="" 
+			shadow-intensity="1" camera-controls touch-action="pan-y">
+		</model-viewer>
+		</label>
+	  </div>
+	</div>
+
+    <div class="text-Area" style="color: white;">
+        
+        <p style="text-align: center;">
+           <h4> About Jameswebb Telescope |</h4>
+           The James Webb Space Telescope is a space telescope designed primarily to conduct infrared astronomy. As the largest optical telescope in space, its high infrared resolution and sensitivity allow it to view objects too early, distant, or faint for the Hubble Space Telescope.
+        </p>
+    </div>
+
+    
+
+   
+
+
+    
+    
+
+    
+
+    
+</body>
+<script src="js/firstpage.js"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</html>

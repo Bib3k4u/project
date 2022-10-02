@@ -1,0 +1,177 @@
+
+body{
+  background-color: black;
+}
+.multi-button button {
+    margin-top: 1rem;
+    flex: 1;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 2rem;
+    border: 2px solid #f2f2f2;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, .1);
+    color: #9a336a;
+    background: transparent;
+    overflow: hidden;
+}
+.multi-button button::before, .multi-button button::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.multi-button button::after {
+    height: 0;
+    background-color: #9a336a;
+    transition: height 0.5s ease;
+    z-index: -1;
+}
+.multi-button button::before {
+    background-color: #fff;
+    height: 100%;
+    z-index: -2;
+}
+.multi-button button:hover {
+    color: #fff;
+    transition: 0.1s ease;
+}
+.multi-button button:hover::after {
+    height: 100%;
+}
+.multi-button button:nth-of-type(1) {
+    border-radius: 6px;
+}
+.multi-button button:nth-of-type(2) {
+    border-radius: 6px;
+}
+.multi-button button:nth-of-type(3) {
+    border-radius: 6px;
+}
+.multi-button button:nth-of-type(4) {
+    border-radius: 6px;
+}
+@keyframes towhite {
+    0% {
+        color: inherit;
+   }
+    100% {
+        color: white;
+   }
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col-md-3 button{
+    width: 20rem;
+}
+
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+ * {
+	 box-sizing: border-box;
+}
+ html, body {
+	 margin: 0;
+	 padding: 0;
+	 width: 100%;
+	 height: 100%;
+}
+
+ input[type=radio] {
+	 display: none;
+}
+ .card {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 left: 0;
+	 right: 0;
+	 margin: auto;
+	 transition: transform 0.4s ease;
+	 cursor: pointer;
+}
+ .container {
+	margin-top: 3rem;
+	 width: 100%;
+	 margin-left: 25rem;
+	 max-width: 800px;
+	 max-height: 600px;
+	 height: 100%;
+	 transform-style: preserve-3d;
+	 display: flex;
+	 justify-content: center;
+	 flex-direction: column;
+	 align-items: center;
+}
+ .cards {
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+	 margin-bottom: 20px;
+}
+ img {
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 10px;
+	 object-fit: cover;
+}
+ #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+	 transform: translatex(-40%) scale(0.8);
+	 opacity: 0.4;
+	 z-index: 0;
+}
+ #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+	 transform: translatex(40%) scale(0.8);
+	 opacity: 0.4;
+	 z-index: 0;
+}
+ #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+	 transform: translatex(0) scale(1);
+	 opacity: 1;
+	 z-index: 1;
+}
+ #item-1:checked ~ .cards #song-1 img, #item-2:checked ~ .cards #song-2 img, #item-3:checked ~ .cards #song-3 img {
+	 box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+ 
+ #item-2:checked ~ .player #test {
+	 transform: translateY(0);
+}
+ #item-2:checked ~ .player #test {
+	 transform: translateY(-40px);
+}
+ #item-3:checked ~ .player #test {
+	 transform: translateY(-80px);
+}
+ 
+
+/* 3d model css dont touch this */
+
+/* #aSide {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: calc(50% - 250px);
+    right: 7%;
+} */
+
+/* This styles the 3D object inserted in the aside container */
+/* #aSide model-viewer {
+    background-color: rgb(240, 201, 201);
+    
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+} */
